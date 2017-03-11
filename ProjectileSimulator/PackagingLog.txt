@@ -1,0 +1,23 @@
+mcc -o ProjectileSimulator -W main:ProjectileSimulator -T link:exe -d /Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_testing -v /Users/Ryan/Documents/MATLAB/ProjectileSimulator/projectile_simulator.m 
+Compiler version: 6.1 (R2015b)
+
+Dependency analysis by REQUIREMENTS.
+
+[Warning: Adding path "/Users/Ryan/Documents/MATLAB/ProjectileSimulator" to
+Compiler path instance.] 
+[] 
+Parsing file "/Users/Ryan/Documents/MATLAB/ProjectileSimulator/projectile_simulator.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 0 temporary MEX authorization files.
+Generating file "/Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_testing/readme.txt".
+Generating file "/Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_testing/run_ProjectileSimulator.sh".
+Packaging...
+Adding custom icon /Applications/MATLAB.app/toolbox/compiler/Resources/default_icon.icns to /Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_testing/ProjectileSimulator.app.
+Creating the bundle...
+Copying /Applications/MATLAB.app/toolbox/compiler/maci64/setup.app to /Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_redistribution/MyAppInstaller_web.app.
+Copying /Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_redistribution/bundle.zip to /Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_redistribution/MyAppInstaller_web.app/Contents/Resources/bundle.zip.
+Copying /var/folders/f3/cx_pbmj941v04gb1p6dftxrh0000gp/T/splash6158082670732504894.tmp to /Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_redistribution/MyAppInstaller_web.app/Contents/Resources/splash.png.
+Copying /Applications/MATLAB.app/toolbox/compiler/Resources/default_icon.icns to /Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_redistribution/MyAppInstaller_web.app/Contents/Resources/installer.icns.
+Web based installer created at /Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_redistribution/MyAppInstaller_web.app.
+Packaging complete.
+Elapsed packaging time was: 26 seconds.

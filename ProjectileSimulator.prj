@@ -1,0 +1,142 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="1579980884" file="/Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator.prj" location="/Users/Ryan/Documents/MATLAB/ProjectileSimulator" name="ProjectileSimulator" preferred-package-location="/Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_redistribution" preferred-package-type="package.type.app" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>ProjectileSimulator</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.4</param.version>
+    <param.authnamewatermark>Ryan Kortvelesy</param.authnamewatermark>
+    <param.email />
+    <param.company>SphericalCow</param.company>
+    <param.summary />
+    <param.description>This program simulates a projectile’s trajectory through the air and path across a given terrain. The user can input the projectile’s physical attributes, values that indicate how to initially launch the projectile, and properties about the environment and landscape to accurately simulate a particular object’s trajectory in a particular environment. The program also displays the object’s x and y position, along with its x and y velocity as the simulation runs. The user can pause and resume the program at any time to note the values at a given time.</param.description>
+    <param.screenshot>/Users/Ryan/Desktop/imgres.jpg</param.screenshot>
+    <param.guid />
+    <param.installpath.string>/SphericalCow/ProjectileSimulator/</param.installpath.string>
+    <param.installpath.combo>option.installpath.systemwideapp</param.installpath.combo>
+    <param.logo />
+    <param.install.notes>In the following directions, replace MCR_ROOT by the directory where the MATLAB Runtime is installed on the target machine.
+
+If the environment variable DYLD_LIBRARY_PATH is undefined, set it to the concatenation of the following strings:
+
+    MCR_ROOT/v90/runtime/maci64:
+    MCR_ROOT/v90/sys/os/maci64:
+    MCR_ROOT/v90/bin/maci64
+
+If it is defined, set it to the concatenation of these strings:
+
+    ${LD_LIBRARY_PATH}: 
+    MCR_ROOT/v90/runtime/maci64:
+    MCR_ROOT/v90/sys/os/maci64:
+    MCR_ROOT/v90/bin/maci64</param.install.notes>
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}/ProjectileSimulator/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/ProjectileSimulator/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/ProjectileSimulator/for_redistribution</param.output>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.required.mcr.products>
+      <item>35000</item>
+      <item>35010</item>
+      <item>35001</item>
+    </param.required.mcr.products>
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.email />
+      <param.summary />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/projectile_simulator.m</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/projectile_simulator.fig</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/ProjectileSimulator/for_testing" name="splash.png" optional="false">/Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_testing/splash.png</file>
+      <file location="${PROJECT_ROOT}/ProjectileSimulator/for_testing" name="run_ProjectileSimulator.sh" optional="false">/Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_testing/run_ProjectileSimulator.sh</file>
+      <file location="${PROJECT_ROOT}/ProjectileSimulator/for_testing" name="readme.txt" optional="true">/Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_testing/readme.txt</file>
+      <file location="${PROJECT_ROOT}/ProjectileSimulator/for_testing" name="ProjectileSimulator.app" optional="false">/Users/Ryan/Documents/MATLAB/ProjectileSimulator/ProjectileSimulator/for_testing/ProjectileSimulator.app</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB.app</root>
+      <toolboxes>
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.11.4</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
